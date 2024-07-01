@@ -13,7 +13,7 @@ public class PatientvisitModule {
     }
 
     public void Patientvisit() throws InterruptedException {
-        Thread.sleep(20000);
+        Thread.sleep(10000);
         WebElement PatientvisitModule = driver.findElement(xpath("//div[normalize-space()='Patient Visit']"));
         PatientvisitModule.click();
 
@@ -119,51 +119,56 @@ public class PatientvisitModule {
         WebElement close = driver.findElement(xpath("//*[text()='Close']"));
         close.click();
 
-        //Payment
-        //entering payment Department
-        Thread.sleep(2000);
-        WebElement Department = driver.findElement(xpath("//*[@formcontrolname=\"Department\"]"));
-        Department.sendKeys("Ane");
-
-        //Choosingdepartment
-        Thread.sleep(3000);
-        WebElement Choosingdepartment = driver.findElement(xpath("//*[text()=\" Anesthesiology \"]"));
-        Choosingdepartment.click();
-
-        //Entering BillingParticulars
-        Thread.sleep(2000);
-        WebElement BillingParticulars = driver.findElement(xpath("(//*[@ng-reflect-placeholder=\"Type and Select\"])[2]"));
-        BillingParticulars.sendKeys("tes");
-
-        //ChossingBillingParticulars
-        Thread.sleep(5000);
-        WebElement ChossingBillingParticulars = driver.findElement(xpath("//*[text()=\" 123 test - sub test \"]"));
-        ChossingBillingParticulars.click();
+        //clicking on back button
+        WebElement back = driver.findElement(xpath("//*[text()=' Back ']"));
+        back.click();
 
 
-      //PaidAmount
-        Thread.sleep(2000);
-        WebElement PaidAmount = driver.findElement(xpath("//*[@formcontrolname=\"PaidAmount\"]"));
-        PaidAmount.sendKeys("300");
-
-        //PaymentMode
-        Thread.sleep(2000);
-        WebElement PaymentMode = driver.findElement(xpath("//*[@formcontrolname=\"PaymentMode\"]"));
-        PaymentMode.click();
-
-        //choosingPaymentMode
-        Thread.sleep(5000);
-        WebElement choosingPaymentMode = driver.findElement(xpath("//*[text()=\" Cash In Hand \"]"));
-        choosingPaymentMode.click();
-
-        //clicking on save button
-        Thread.sleep(5000);
-        WebElement save = driver.findElement(xpath("//*[text()=\" Save \"]"));
-        save.click();
-
-
-
-
+//        //Payment
+//        //entering payment Department
+//        Thread.sleep(2000);
+//        WebElement Department = driver.findElement(xpath("//*[@formcontrolname=\"Department\"]"));
+//        Department.sendKeys("Ane");
+//
+//        //Choosingdepartment
+//        Thread.sleep(3000);
+//        WebElement Choosingdepartment = driver.findElement(xpath("//*[text()=\" Anesthesiology \"]"));
+//        Choosingdepartment.click();
+//
+//        //Entering BillingParticulars
+//        Thread.sleep(2000);
+//        WebElement BillingParticulars = driver.findElement(xpath("(//*[@ng-reflect-placeholder=\"Type and Select\"])[2]"));
+//        BillingParticulars.sendKeys("tes");
+//
+//        //ChossingBillingParticulars
+//        Thread.sleep(5000);
+//        WebElement ChossingBillingParticulars = driver.findElement(xpath("//*[text()=\" 123 test - sub test \"]"));
+//        ChossingBillingParticulars.click();
+//
+//
+//      //PaidAmount
+//        Thread.sleep(2000);
+//        WebElement PaidAmount = driver.findElement(xpath("//*[@formcontrolname=\"PaidAmount\"]"));
+//        PaidAmount.sendKeys("300");
+//
+//        //PaymentMode
+//        Thread.sleep(2000);
+//        WebElement PaymentMode = driver.findElement(xpath("//*[@formcontrolname=\"PaymentMode\"]"));
+//        PaymentMode.click();
+//
+//        //choosingPaymentMode
+//        Thread.sleep(5000);
+//        WebElement choosingPaymentMode = driver.findElement(xpath("//*[text()=\" Cash In Hand \"]"));
+//        choosingPaymentMode.click();
+//
+//        //clicking on save button
+//        Thread.sleep(5000);
+//        WebElement save = driver.findElement(xpath("//*[text()=\" Save \"]"));
+//        save.click();
+//
+//
+//
+//
 
 
 
