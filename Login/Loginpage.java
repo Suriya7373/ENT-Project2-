@@ -33,11 +33,11 @@ Loginpage {
 //        PatientsModule  Patients= new PatientsModule(driver);
 //        Patients.Patients();
         //put on existing patient appointment
-        existingpatientappointment ExistingAppointment=new existingpatientappointment(driver);
-        ExistingAppointment.ExistingAppointment();
+        //existingpatientappointment ExistingAppointment=new existingpatientappointment(driver);
+        //ExistingAppointment.ExistingAppointment();
         //calling to Patientvisit
-        PatientvisitModule Patientvisit= new PatientvisitModule(driver);
-        Patientvisit.Patientvisit();
+        //PatientvisitModule Patientvisit= new PatientvisitModule(driver);
+        //Patientvisit.Patientvisit();
         //payment paymentvisit=new payment(driver);
         //paymentvisit.paymentvisit();
         //existingpatientappointment ExistingAppointment=new existingpatientappointment(driver);
