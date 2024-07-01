@@ -18,7 +18,62 @@ public class PatientsModule {
         WebElement PatientAppointment = driver.findElement(xpath("//div[normalize-space()='Patient']"));
         PatientAppointment.click();
 
-      //patientviewdetails
+        //Newpatinet
+        Thread.sleep(5000);
+        WebElement Newpatinet = driver.findElement(xpath("//*[text()=\" Add New Patient\"]"));
+        Newpatinet.click();
+
+        //choosingfacility
+        Thread.sleep(5000);
+        WebElement choosingfacility = driver.findElement(xpath("//*[@formcontrolname=\"Facility\"]"));
+        choosingfacility.click();
+
+        //choosingbludelhi
+        Thread.sleep(5000);
+        WebElement choosingbludelhi = driver.findElement(xpath("(//*[@class=\"mat-option-text\"])[1]"));
+        choosingbludelhi.click();
+
+
+        //choosing patienttype
+        Thread.sleep(5000);
+        WebElement patienttype = driver.findElement(xpath("//*[@formcontrolname=\"PatientType\"]"));
+        patienttype.click();
+
+        //choosingpatienttype
+        Thread.sleep(5000);
+        WebElement choosingpatienttype = driver.findElement(xpath("//*[text()=\" Inpatient  \"]"));
+        choosingpatienttype.click();
+
+        //patinet firstname
+        Thread.sleep(5000);
+        WebElement firstname = driver.findElement(xpath("//*[@formcontrolname=\"PatientFirstName\"]"));
+        firstname.sendKeys("Arun");
+
+        //patinet  //PatientLastName
+        Thread.sleep(5000);
+        WebElement PatientLastName = driver.findElement(xpath("//*[@formcontrolname=\"PatientLastName\"]"));
+        PatientLastName.sendKeys("Vijay");
+
+        //Gender
+        Thread.sleep(5000);
+        WebElement Gender = driver.findElement(xpath("//*[@formcontrolname=\"Gender\"]"));
+        Gender.click();
+
+        //choosinggender
+        Thread.sleep(5000);
+        WebElement choosinggender = driver.findElement(xpath("//*[text()=\" Male \"]"));
+        choosinggender.click();
+
+        //Entering emergencycontact
+        Thread.sleep(5000);
+        WebElement emergencycontact = driver.findElement(xpath("//*[@formcontrolname=\"Emergencycontactnumber\"]"));
+        emergencycontact.sendKeys("7656787667");
+
+        //save
+        Thread.sleep(5000);
+        WebElement save = driver.findElement(xpath("//*[text()=\"Save\"]"));
+        save.click();
+        //patientviewdetails
         Thread.sleep(20000);
         WebElement patientviewdetails= driver.findElement(xpath("(//*[@ng-reflect-message=\"View Patient Details\"])[1]"));
       patientviewdetails.click();

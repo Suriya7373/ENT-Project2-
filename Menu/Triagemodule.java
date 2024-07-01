@@ -28,8 +28,8 @@ public class Triagemodule {
 
         //clivking on kevinpatient
         Thread.sleep(3000);
-        WebElement kevinpatient=driver.findElement(xpath("//*[text()=\" Rabin  john - MR0000118 \"]"));
-//        kevinpatient.click();
+        WebElement Rabinpatient=driver.findElement(xpath("//*[text()=\" Rabin      john - MR0000118 \"]"));
+        Rabinpatient.click();
 
         //searchpatient
         Thread.sleep(3000);
@@ -39,58 +39,58 @@ public class Triagemodule {
 
 //Editetriage
         Thread.sleep(10000);
-        WebElement Editetriage=driver.findElement(xpath("//*[@ng-reflect-message=\"Visit Intake\"]"));
+        WebElement Editetriage=driver.findElement(xpath("//*[@class=\"footerIcons\"]"));
         Editetriage.click();
 
-//        //choosing RecordedBy
-        Thread.sleep(3000);
-        WebElement RecordedBy=driver.findElement(xpath("(//*[@formcontrolname=\"RecordedBy\"])[1]"));
-        RecordedBy.click();
-
-       //choosing recodrded by doctor name
-        Thread.sleep(3000);
-        WebElement choosingRecordedBy=driver.findElement(xpath("//*[@ng-reflect-value=\"Naresh  Sharma\"]"));
-        choosingRecordedBy.click();
-
-        //entering height
-        Thread.sleep(3000);
-        WebElement height=driver.findElement(xpath("(//*[@formcontrolname=\"Height\"])[1]"));
-        height.sendKeys("160");
-
-        //entering Weight
-        Thread.sleep(3000);
-        WebElement Weight=driver.findElement(xpath("//*[@formcontrolname=\"Weight\"]"));
-        Weight.sendKeys("85");
-
-        //Entering Temperature
-        Thread.sleep(3000);
-        WebElement Temperature=driver.findElement(xpath("//*[@formcontrolname=\"Temperature\"]"));
-        Temperature.sendKeys("85");
-
-        //choose patient diabetic yes/no
-        Thread.sleep(3000);
-        WebElement diabetic=driver.findElement(xpath("(//*[@class=\"mat-radio-container\"])[1]"));
-        diabetic.click();
-
-        //choosing bloodpressure yes/no
-        Thread.sleep(3000);
-        WebElement bloodpressure=driver.findElement(xpath("(//*[@class=\"mat-radio-container\"])[4]"));
-        bloodpressure.click();
-//        //clicking on save button
-        Thread.sleep(3000);
-        WebElement save1=driver.findElement(xpath("(//*[text()=\" Save \"])[1]"));
-        save1.click();
-
-        //clicking the close button
-        Thread.sleep(3000);
-        WebElement close=driver.findElement(xpath("//*[text()=\"Close\"]"));
-        close.click();
-
-
-//        //clicking on next button
-        Thread.sleep(3000);
-       WebElement next=driver.findElement(xpath("(//*[text()=\" Next \"])[1]"));
-       next.click();
+////        //choosing RecordedBy
+//        Thread.sleep(3000);
+//        WebElement RecordedBy=driver.findElement(xpath("(//*[@formcontrolname=\"RecordedBy\"])[1]"));
+//        RecordedBy.click();
+//
+//       //choosing recodrded by doctor name
+//        Thread.sleep(3000);
+//        WebElement choosingRecordedBy=driver.findElement(xpath("//*[text()=\" Naresh  Sharma \"]"));
+//        choosingRecordedBy.click();
+//
+//        //entering height
+//        Thread.sleep(3000);
+//        WebElement height=driver.findElement(xpath("(//*[@formcontrolname=\"Height\"])[1]"));
+//        height.sendKeys("160");
+//
+//        //entering Weight
+//        Thread.sleep(3000);
+//        WebElement Weight=driver.findElement(xpath("//*[@formcontrolname=\"Weight\"]"));
+//        Weight.sendKeys("85");
+//
+//        //Entering Temperature
+//        Thread.sleep(3000);
+//        WebElement Temperature=driver.findElement(xpath("//*[@formcontrolname=\"Temperature\"]"));
+//        Temperature.sendKeys("85");
+//
+//        //choose patient diabetic yes/no
+//        Thread.sleep(3000);
+//        WebElement diabetic=driver.findElement(xpath("(//*[@class=\"mat-radio-container\"])[1]"));
+//        diabetic.click();
+//
+//        //choosing bloodpressure yes/no
+//        Thread.sleep(3000);
+//        WebElement bloodpressure=driver.findElement(xpath("(//*[@class=\"mat-radio-container\"])[4]"));
+//        bloodpressure.click();
+////        //clicking on save button
+//        Thread.sleep(3000);
+//        WebElement save1=driver.findElement(xpath("(//*[text()=\" Save \"])[1]"));
+//        save1.click();
+//
+//        //clicking the close button
+//        Thread.sleep(3000);
+//        WebElement close=driver.findElement(xpath("//*[text()=\"Close\"]"));
+//        close.click();
+//
+//
+////        //clicking on next button
+//        Thread.sleep(3000);
+//       WebElement next=driver.findElement(xpath("(//*[text()=\" Next \"])[1]"));
+//       next.click();
 
         //Allergy module
         //choosing RecordedBy
@@ -99,7 +99,7 @@ public class Triagemodule {
         RecordedBy1.click();
        //choosing recodrded by doctor name
         Thread.sleep(3000);
-        WebElement choosingRecordedBy2=driver.findElement(xpath("//*[@ng-reflect-value=\"Naresh  Sharma\"]"));
+        WebElement choosingRecordedBy2=driver.findElement(xpath("//*[text()=\" Naresh  Sharma \"]"));
         choosingRecordedBy2.click();
 
         //Enter allergyname
@@ -108,7 +108,7 @@ public class Triagemodule {
 
         //clicking on save button
         Thread.sleep(3000);
-        WebElement save2=driver.findElement(xpath("//*[text()=\" save \"]"));
+        WebElement save2=driver.findElement(xpath("(//*[text()=\" save \"])[1]"));
         save2.click();
 
         //clicking the close button
@@ -128,7 +128,7 @@ public class Triagemodule {
         RecordedBy3.click();
         //choosing recodrded by doctor name
         Thread.sleep(3000);
-        WebElement choosingRecordedBy3=driver.findElement(xpath("//*[@ng-reflect-value=\"Naresh  Sharma\"]"));
+        WebElement choosingRecordedBy3=driver.findElement(xpath("//*[text()=\" Naresh  Sharma \"]"));
         choosingRecordedBy3.click();
 
         //choosing problemtype

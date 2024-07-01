@@ -33,9 +33,27 @@ public class PatientvisitModule {
         WebElement visittime = driver.findElement(xpath("//*[@formcontrolname=\"VisitTime\"]"));
         visittime.click();
 
+        //choosingtime10
+        Thread.sleep(5000);
+        WebElement choosingtime10 = driver.findElement(xpath("//*[text()=\" 10 \"]"));
+        choosingtime10.click();
+
+        //am/pm
+        Thread.sleep(5000);
+        WebElement pm = driver.findElement(xpath("//*[text()=\"PM\"]"));
+        pm.click();
+
+
+
+        //choosingtime
+        Thread.sleep(5000);
+        WebElement choosingtime = driver.findElement(xpath("(//*[@class=\"clock-face__number clock-face__number--outer ng-star-inserted\"])[31]"));
+        choosingtime.click();
+
+
         //setpup the visittime
         Thread.sleep(2000);
-        WebElement setvisittime = driver.findElement(xpath("(//*[@class=\"timepicker-button\"])[2]"));
+        WebElement setvisittime = driver.findElement(xpath("//*[text()=\"Ok\"]"));
         setvisittime.click();
 
         // clicking on VisitType dropdown

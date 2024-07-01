@@ -49,15 +49,15 @@ public class existingpatientappointment {
         WebElement clickinhSearchExistingpatient=driver.findElement(xpath("//*[text()=\" Rabin  john - MR0000118 \"]"));
         clickinhSearchExistingpatient.click();
 
-        //choosing toconsult
-        Thread.sleep(5000);
-        WebElement toconsult=driver.findElement(xpath("//*[@formcontrolname=\"ToConsult\"]"));
-        toconsult.click();
-        //choose phycician
-        //clcking on searching patient
-        Thread.sleep(5000);
-        WebElement phycician=driver.findElement(xpath("(//*[text()=\"Physician\"])[2]"));
-        phycician.click();
+//        //choosing toconsult
+//        Thread.sleep(5000);
+//        WebElement toconsult=driver.findElement(xpath("//*[@formcontrolname=\"ToConsult\"]"));
+//        toconsult.click();
+//        //choose phycician
+//        //clcking on searching patient
+//        Thread.sleep(5000);
+//        WebElement phycician=driver.findElement(xpath("(//*[text()=\"Physician\"])[2]"));
+//        phycician.click();
 
         //searching on physicican
         Thread.sleep(5000);
@@ -80,7 +80,7 @@ public class existingpatientappointment {
         todayappointement.click();
 
 //        appointementtime
-        WebElement appointementtime= driver.findElement(xpath("//*[@ng-reflect-name=\"AppointmentTime\"]"));
+        WebElement appointementtime= driver.findElement(xpath("//*[@formcontrolname=\"AppointmentTime\"]"));
         appointementtime.click();
 //
 //      //choosingappointementtime
@@ -89,7 +89,7 @@ public class existingpatientappointment {
         choosingappointementtime.click();
 
         //Appointmenttype
-        WebElement Appointmenttype= driver.findElement(xpath("//*[@ng-reflect-name=\"AppointmentType\"]"));
+        WebElement Appointmenttype= driver.findElement(xpath("//*[@formcontrolname=\"AppointmentType\"]"));
         Appointmenttype.click();
 
         //choosingappointmenttype

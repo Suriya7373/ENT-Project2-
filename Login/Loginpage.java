@@ -27,19 +27,21 @@ Loginpage {
         LoginpagePOM.Signin(driver).click();
 
 //        //calling to Appointment page
-        //AppointmentModule Appointment= new AppointmentModule(driver);
-        //Appointment.Appointment();
+       //AppointmentModule Appointment= new AppointmentModule(driver);
+      // Appointment.Appointment();
 //        //calling to PatientModule
-//        PatientsModule  Patients= new PatientsModule(driver);
-//        Patients.Patients();
+        //PatientsModule  Patients= new PatientsModule(driver);
+        //Patients.Patients();
         //put on existing patient appointment
         //existingpatientappointment ExistingAppointment=new existingpatientappointment(driver);
         //ExistingAppointment.ExistingAppointment();
         //calling to Patientvisit
-        //PatientvisitModule Patientvisit= new PatientvisitModule(driver);
+       // PatientvisitModule Patientvisit= new PatientvisitModule(driver);
         //Patientvisit.Patientvisit();
+        //visit page appointment page
         //payment paymentvisit=new payment(driver);
         //paymentvisit.paymentvisit();
+        //New patient appointment
         //existingpatientappointment ExistingAppointment=new existingpatientappointment(driver);
         //ExistingAppointment.ExistingAppointment();
         //calling Triagemodule
