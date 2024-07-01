@@ -24,15 +24,17 @@ public class AppointmentModule {
          PatientAppointment.click();
 
          //Appointmentcalender
+        Thread.sleep(5000);
           WebElement calendar= driver.findElement(xpath("(//*[@class=\"dx-button-text\"])[1]"));
           calendar.click();
 
           //Clicking on appointmentlist
+        Thread.sleep(5000);
          WebElement appointmentlist= driver.findElement(xpath("//*[@id=\"List\"]"));
          appointmentlist.click();
 
         //Clicking on Addappointmentlist
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         WebElement Addappointmentlist= driver.findElement(xpath("//*[@id=\"Add\"]"));
         Addappointmentlist.click();
 

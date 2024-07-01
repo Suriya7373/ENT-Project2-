@@ -1,6 +1,7 @@
 package Login;
 
 import Menu.AppointmentModule;
+import Menu.PatientsModule;
 import POM.LoginpagePOM;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -28,8 +29,11 @@ Loginpage {
         //Enter signup
         LoginpagePOM.Signin(driver).click();
 
-        //calling to Appointment page
-         AppointmentModule Appointment= new AppointmentModule(driver);
-          Appointment.Appointment();
+//        //calling to Appointment page
+//         AppointmentModule Appointment= new AppointmentModule(driver);
+//          Appointment.Appointment();
+        //calling to PatientModule
+        PatientsModule  Patients= new PatientsModule(driver);
+        Patients.Patients();
     }
 }
