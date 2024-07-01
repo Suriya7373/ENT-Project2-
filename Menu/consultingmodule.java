@@ -56,6 +56,44 @@ public class consultingmodule {
         WebElement problemlist=driver.findElement(xpath("//*[text()=\"3\"]"));
         problemlist.click();
 
+        //moving to medication
+        Thread.sleep(5000);
+        WebElement medication=driver.findElement(xpath("//*[text()=\"4\"]"));
+        medication.click();
+       //moving to Social
+        Thread.sleep(5000);
+        WebElement Social=driver.findElement(xpath("(//*[text()=\"5\"])[1]"));
+        Social.click();
+
+        //moving to ROS
+        Thread.sleep(5000);
+        WebElement ROS=driver.findElement(xpath("//*[text()=\"6\"]"));
+        ROS.click();
+
+        //moving to ROS
+        Thread.sleep(5000);
+        WebElement Nutrition=driver.findElement(xpath("//*[text()=\"7\"]"));
+        Nutrition.click();
+
+        //moving to Functional
+        Thread.sleep(5000);
+        WebElement Functional=driver.findElement(xpath("//*[text()=\"8\"]"));
+        Functional.click();
+        //moving to//moving to Nursing
+
+        Thread.sleep(5000);
+        WebElement Nursing=driver.findElement(xpath("//*[text()=\"9\"]"));
+        Nursing.click();
+
+        //back
+        Thread.sleep(5000);
+        WebElement back=driver.findElement(xpath("//*[@class=\"close\"]"));
+        back.click();
+
+
+
+
+
 
     }
 }
