@@ -20,10 +20,10 @@ public class existingpatientappointment {
         WebElement PatientAppointment = driver.findElement(xpath("//div[normalize-space()='Appointments']"));
         PatientAppointment.click();
 
-        //Appointmentcalender
-        Thread.sleep(5000);
-        WebElement calendar= driver.findElement(xpath("(//*[@class=\"dx-button-text\"])[1]"));
-        calendar.click();
+//        //Appointmentcalender
+//        Thread.sleep(10000);
+//        WebElement calendar= driver.findElement(xpath("(//*[@class=\"dx-button-text\"])[1]"));
+//        calendar.click();
 
         //Clicking on appointmentlist
         Thread.sleep(5000);
@@ -42,11 +42,11 @@ public class existingpatientappointment {
         //searching on existing patient
         Thread.sleep(5000);
         WebElement SearchExistingpatient=driver.findElement(xpath("//*[@placeholder=\"Search\"]"));
-        SearchExistingpatient.sendKeys("kevin");
+        SearchExistingpatient.sendKeys("Rabin");
 
         //clcking on searching patient
         Thread.sleep(5000);
-        WebElement clickinhSearchExistingpatient=driver.findElement(xpath("//*[text()=\" Kevin  John - MR0000133 \"]"));
+        WebElement clickinhSearchExistingpatient=driver.findElement(xpath("//*[text()=\" Rabin  john - MR0000118 \"]"));
         clickinhSearchExistingpatient.click();
 
         //choosing toconsult
