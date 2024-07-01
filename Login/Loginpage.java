@@ -49,6 +49,6 @@ Loginpage {
         //Triage.Triage();
         //consulting module
         consultingmodule consulting=new consultingmodule(driver);
-        consulting.consulting();
+        consulting.consulting();kklkk
     }
 }
