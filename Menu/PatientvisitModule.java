@@ -39,22 +39,27 @@ public class PatientvisitModule {
         choosingtime10.click();
 
         //am/pm
-        Thread.sleep(5000);
+        Thread.sleep(3000);
         WebElement pm = driver.findElement(xpath("//*[text()=\"PM\"]"));
         pm.click();
 
 
 
-        //choosingtime
-        Thread.sleep(5000);
-        WebElement choosingtime = driver.findElement(xpath("(//*[@class=\"clock-face__number clock-face__number--outer ng-star-inserted\"])[31]"));
-        choosingtime.click();
+//   //choosingtime
+//        Thread.sleep(5000);
+//        WebElement choosingtime = driver.findElement(xpath("(//*[@class=\"clock-face__number clock-face__number--outer ng-star-inserted\"])[31]"));
+//        choosingtime.click();
 
 
         //setpup the visittime
         Thread.sleep(2000);
         WebElement setvisittime = driver.findElement(xpath("//*[text()=\"Ok\"]"));
         setvisittime.click();
+
+        //clicking on close button
+        Thread.sleep(3000);
+        WebElement close1 = driver.findElement(xpath("//*[text()=\"Close\"]"));
+        close1.click();
 
         // clicking on VisitType dropdown
         Thread.sleep(2000);
