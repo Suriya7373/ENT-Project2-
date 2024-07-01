@@ -1,7 +1,6 @@
 package Login;
-
-import Menu.AppointmentModule;
-import Menu.PatientsModule;
+import Menu.*;
+import Menu.PatientvisitModule;
 import POM.LoginpagePOM;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -19,9 +18,7 @@ Loginpage {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(500));
         driver.get("https://entdemo.eblucare.com");
         driver.manage().window().maximize();
-
         //Enter username
-
         //LoginpagePOM loginpagePOM=new LoginpagePOM();
         LoginpagePOM.username(driver).sendKeys("bluehospital@eblucare.com");
         //Entering  password
@@ -30,10 +27,15 @@ Loginpage {
         LoginpagePOM.Signin(driver).click();
 
 //        //calling to Appointment page
-//         AppointmentModule Appointment= new AppointmentModule(driver);
-//          Appointment.Appointment();
-        //calling to PatientModule
-        PatientsModule  Patients= new PatientsModule(driver);
-        Patients.Patients();
+//        AppointmentModule Appointment= new AppointmentModule(driver);
+//        Appointment.Appointment();
+//        //calling to PatientModule
+//        PatientsModule  Patients= new PatientsModule(driver);
+//        Patients.Patients();
+        //calling to Patientvisit
+        // PatientvisitModule Patientvisit= new PatientvisitModule(driver);
+       // Patientvisit.Patientvisit();
+        payment paymentvisit=new payment(driver);
+        paymentvisit.paymentvisit();
     }
 }

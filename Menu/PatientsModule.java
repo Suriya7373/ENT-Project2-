@@ -24,17 +24,17 @@ public class PatientsModule {
       patientviewdetails.click();
 
       //Closepatientviewdetails
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         WebElement Closepatientviewdetails= driver.findElement(xpath("//*[@class=\"close\"]"));
         Closepatientviewdetails.click();
 
         //patientEditdetails
-        Thread.sleep(10000);
+        Thread.sleep(5000);
         WebElement patientEditdetails= driver.findElement(xpath("(//*[@ng-reflect-message=\"Edit Patient Details\"])[1]"));
         patientEditdetails.click();
 
         //ClosepatientEditdetails
-        Thread.sleep(3000);
+        Thread.sleep(5000);
         WebElement ClosepatientEditdetails= driver.findElement(xpath("//*[@class=\"close\"]"));
         ClosepatientEditdetails.click();
 
@@ -43,13 +43,32 @@ public class PatientsModule {
         WebElement Patientchart= driver.findElement(xpath("(//*[@ng-reflect-message=\"Patient Chart\"])[1]"));
         Patientchart.click();
 
-        //ClosePatientchart
+        //Patientchart demographics
+        Thread.sleep(3000);
+        WebElement demographics = driver.findElement(xpath("//*[text()=\"Demographics\"]"));
+        demographics.click();
+
+        //Patientchart HealthHistory
+        Thread.sleep(3000);
+        WebElement HealthHistory = driver.findElement(xpath("//*[text()=\"Health History\"]"));
+        HealthHistory.click();
+
+        //Patientchart Visit
+        Thread.sleep(3000);
+        WebElement Visit = driver.findElement(xpath("//*[text()=\"Visit\"]"));
+        Visit.click();
+        //Patientchart Hospitalization
+        Thread.sleep(3000);
+        WebElement Hospitalization = driver.findElement(xpath("//*[text()=\"Hospitalization\"]"));
+        Hospitalization.click();
+
+        //BackPatientchart
         Thread.sleep(5000);
-        WebElement ClosePatientchart= driver.findElement(xpath("(//*[@class=\"mat-button-ripple mat-ripple\"])[1]"));
-        ClosePatientchart.click();
+        WebElement Back = driver.findElement(xpath("//*[@class=\"px-3 mr-2 my-2\"]"));
+        Back.click();
 
         //Patient Summary
-        Thread.sleep(10000);
+        Thread.sleep(5000);
         WebElement PrintPatientSummary= driver.findElement(xpath("(//*[@ng-reflect-message=\"Print Patient Summary\"])[1]"));
         PrintPatientSummary.click();
 

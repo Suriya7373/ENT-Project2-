@@ -51,7 +51,7 @@ public class AppointmentModule {
         //Endering patientfirstname
         Thread.sleep(1000);
         WebElement patientfirstname= driver.findElement(xpath("//*[@id=\"mat-input-7\"]"));
-        patientfirstname.sendKeys("Bell");
+        patientfirstname.sendKeys("Kevin");
 
         //Endering patientLasttname
         Thread.sleep(1000);
